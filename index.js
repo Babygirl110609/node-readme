@@ -98,12 +98,12 @@ ${response.test}
 [Github Profile](https://github.com/${response.github})
 
 ### License
- ![GitHub license](https://img.shields.io/badge/license-${response.license}-blue.svg)
+ GitHub license](https://img.shields.io/badge/license-${response.license}-blue.svg)
 
 
  ### Email
  feel free to contact me if you have any questions ${response.email}
-        `
+        
 fs.writeFileSync("README.md",markdownContent, function(err){
     if(err)throw err;
 })
@@ -113,4 +113,4 @@ console.log("README generated")
 }
 
 // Function call to initialize app
-init();
+init () i
