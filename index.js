@@ -14,6 +14,7 @@ const questions = [
         name: "description"
     },
     {
+    
         type: "input",
         message: "installation instruction",
         name: "instruction"
@@ -62,6 +63,7 @@ function init() {
     inquirer.prompt(questions).then(response => {
         console.log(response)
         let markdownContent = `
+
         
 # Title: ${response.title}
 
@@ -102,7 +104,7 @@ ${response.test}
 
 
  ### Email
- feel free to contact me if you have any questions ${response.email}
+ feel free to contact me if you have any questions ${response.email} `
         
 fs.writeFileSync("README.md",markdownContent, function(err){
     if(err)throw err;
@@ -113,4 +115,4 @@ console.log("README generated")
 }
 
 // Function call to initialize app
-init () i
+init ()
